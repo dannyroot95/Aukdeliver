@@ -103,6 +103,9 @@ public class FirestoreClass {
         });
     }
 
+
+    //actualizar estado del item y del proveedor
+
     public void updateStatusDriverToClient(Activity activity , String tokenIDser ,
                                             String numOrder , String photo , String document , Integer status){
 

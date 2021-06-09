@@ -113,7 +113,6 @@ public class DetailOrder extends AppCompatActivity {
                 status.setText("Procesando");
                 status.setTextColor(Color.parseColor("#F1C40F"));
             }
-
             else if (order.getStatus() == 2){
                 btnCompleteOrder.setVisibility(View.VISIBLE);
                 status.setText("Recibido");

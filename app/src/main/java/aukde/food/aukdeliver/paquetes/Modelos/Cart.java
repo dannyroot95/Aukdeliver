@@ -14,11 +14,13 @@ public class Cart implements Serializable {
     String stock_quantity;
     String id;
     Integer status = 0;
+    String delivery;
 
     public Cart(){}
 
     public Cart(String user_id, String provider_id, String product_id, String title, String price,
-                String image, String cart_quantity, String stock_quantity, String id, Integer status) {
+                String image, String cart_quantity, String stock_quantity, String id, Integer status,
+                String delivery) {
         this.user_id = user_id;
         this.provider_id = provider_id;
         this.product_id = product_id;
@@ -29,6 +31,7 @@ public class Cart implements Serializable {
         this.stock_quantity = stock_quantity;
         this.id = id;
         this.status = status;
+        this.delivery = delivery;
     }
 
     public String getUser_id() {
@@ -109,5 +112,13 @@ public class Cart implements Serializable {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public String getDelivery() {
+        return delivery;
+    }
+
+    public void setDelivery(String delivery) {
+        this.delivery = delivery;
     }
 }

@@ -86,6 +86,10 @@ public class CartItemsListAdapter
             ((MyView) holder).tv4.setTextColor(Color.parseColor("#5bbd00"));
             }
 
+        if (model.getDelivery().equals("si")){
+            holder.itemView.setVisibility(View.GONE);
+        }
+
         if (model.getStatus() == 1){
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -116,7 +120,6 @@ public class CartItemsListAdapter
                 }
             });
         }
-
 
         }
 
